@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>メモ追加</title>
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+
+<body>
+    <h1>好きな音楽のメモ登録</h1>
+
+    <form id="musicMemoForm">
+        <label for="title">曲名</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="artist">アーティスト名</label>
+        <input type="text" id="artist" name="artist" required />
+
+        <label for="genre">ジャンル</label>
+        <select id="genre" name="genre" required>
+            <option value="">選択してください</option>
+            <option>J-POP</option>
+            <option>ロック</option>
+            <option>クラシック</option>
+            <option>ジャズ</option>
+            <option>ヒップホップ</option>
+            <option>その他</option>
+        </select>
+
+        <label for="url">曲のURL (YouTube, Spotifyなど)</label>
+        <input type="url" id="url" name="url" placeholder="https://example.com" />
+
+        <label for="comment">コメント・思い出メモ</label>
+        <textarea id="comment" name="comment" placeholder="この曲にまつわるエピソードなど"></textarea>
+
+        <label for="tags">タグ (カンマ区切りで複数可)</label>
+        <input type="text" id="tags" name="tags" placeholder="リラックス用, 勉強用" />
+
+        <label for="image">画像アップロード (ジャケットなど)</label>
+        <input type="file" id="image" name="image" accept="image/*" />
+
+        <label for="startTime">再生開始時間 (秒)</label>
+        <input type="number" id="startTime" name="startTime" min="0" placeholder="例: 60" />
+
+        <button type="submit" class="save-button">保存</button>
+    </form>
+
+    <script type="module" src="./../js/Register.mjs"></script>
+
+    <button type="button" class="home-button" onclick="location.href='./home2.html'">ホームに戻る</button>
+</body>
+
+</html>

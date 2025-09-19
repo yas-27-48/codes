@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+  
+  .artist-section {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .artist-section h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .song-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .song-list li {
+    margin-bottom: 6px;
+  }
+  
+  .detail-link, .edit-link {
+    margin-left: 6px;
+    color: #2196F3;
+    text-decoration: none;
+  }
+  
+  .detail-link:hover, .edit-link:hover {
+    text-decoration: underline;
+  }
+
+  .home-button {
+    display: block;
+    margin: 20px auto;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .artist-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .artist-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .edit-artist-button {
+    background-color: #2196F3;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .edit-artist-button:hover {
+    background-color: #1976D2;
+  }
+  
+  #toggleSortBtn {
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  #toggleSortBtn:hover {
+    background-color: #1976D2;
+  }
+  

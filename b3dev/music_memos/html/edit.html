@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>メモ編集</title>
+  <link rel="stylesheet" href="./../css/edit.css" />
+  <script type="module" src="./../js/edit.mjs"></script>
+</head>
+<body>
+  <h1>✏️ メモを編集</h1>
+  <form id="editForm">
+    <label>曲名 <input type="text" name="title" required /></label>
+    <label>アーティスト <input type="text" name="artist" required /></label>
+    <label>ジャンル <input type="text" name="genre" required /></label>
+    <label>URL <input type="url" name="url" /></label>
+    <label>コメント <textarea name="comment"></textarea></label>
+    <button type="submit">保存</button>
+    <button type="button" class="back-button" onclick="history.back()">← 保存せずに戻る</button>
+  </form>
+</body>
+</html>

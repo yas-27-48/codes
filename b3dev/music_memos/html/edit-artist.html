@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>アーティスト編集</title>
+  <link rel="stylesheet" href="./../css/edit-artist.css" />
+</head>
+
+<body>
+  <h1>アーティスト編集</h1>
+  <form id="editArtistForm">
+    <label>アーティスト名：<span id="artistNameDisplay"></span></label>
+    <input type="hidden" name="name" id="artistName"/>
+
+    <br><br>
+
+    <label>
+      曲を選択:<br>
+      <div id="songCheckboxes"></div>
+    </label>
+    <br><br>
+
+    <button type="submit">保存する</button>
+    <button type="button" id="cancelButton">キャンセル</button>
+  </form>
+
+  <script type="module" src="./../js/edit-artist.mjs"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* 全体レイアウト */
+body {
+    font-family: "Hiragino Kaku Gothic Pro", Arial, sans-serif;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+  
+  /* タイトル */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  /* フォーム全体 */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ラベル全般 */
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* テキスト入力、URL、セレクト、テキストエリア */
+  input[type="text"],
+  input[type="url"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  /* テキストエリアサイズ調整 */
+  textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  /* 汎用ボタン */
+  button {
+    margin-top: 25px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #388E3C;
+  }
+  
+  /* キャンセルボタン */
+  .back-button {
+    margin-top: 15px;
+    background-color: #888;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #666;
+  }
+  
+  /* アーティスト名表示 */
+  #artistNameDisplay {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: normal;
+    color: #222;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  /* チェックボックスリスト */
+  #songCheckboxes {
+    margin-top: 10px;
+  }
+  
+  #songCheckboxes label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  #songCheckboxes input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
